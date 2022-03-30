@@ -1,0 +1,53 @@
+Ubuntu 20.04 Installation Notes
+
+1. sublime text: https://linuxize.com/post/how-to-install-sublime-text-3-on-ubuntu-20-04/
+
+2. python
+install: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
+set default: https://unix.stackexchange.com/questions/410579/change-the-python3-default-version-in-ubuntu
+sudo update-alternatives --config python
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+remove python 3.8 to update to python other version: https://askubuntu.com/questions/682869/how-do-i-install-a-different-python-version-using-apt-get
+
+3. LINE: https://www.youtube.com/watch?v=NDsL8BUURb8
+or https://tedliou.com/archives/howto-install-line-on-ubuntu-20-04/
+
+4. tensorflow-gpu: https://towardsdatascience.com/installing-tensorflow-gpu-in-ubuntu-20-04-4ee3ca4cb75d?gi=445b73e94268
+command terakhir: python3 -m pip install tensorflow==2.2.0
+
+5. chrome darkmode: https://www.google.com/preferences?prev=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dinstall%2Bcarla%2Bubuntu%26oq%3Dinstall%2Bcarla%2Bubuntu%26aqs%3Dchrome..69i57.42463j0j1%26sourceid%3Dchrome%26ie%3DUTF-8%26google_abuse%3DGOOGLE_ABUSE_EXEMPTION%253DID%253D2387e53f03044c85%3ATM%253D1616665265%3AC%253Dr%3AIP%253D140.113.136.219-%3AS%253DAPGng0u69ZweYzVZzJKpAtF8aeP7Axcfjg%253B%2Bpath%253D%2F%253B%2Bdomain%253Dgoogle.com%253B%2Bexpires%253DThu%2C%2B25-Mar-2021%2B12%3A41%3A05%2BGMT#cs-radio
+
+6. chinese input: 
+ step1: sudo apt-get install ibus-pinyin
+ step2: ibus restart
+ step3: ke region & language settings -> manage installed language -> install/remove language 
+ 	-> chinese traditional & simplified centang
+ step4: di input source -> + -> chinese(china) -> intelligent pinyin
+ step5: restart
+
+7. CARLA: https://www.youtube.com/watch?v=AaJekfFR1KQ
+
+8. pip specific version: python3.7 -m pip install <module-name>
+
+9. Install woeusb:
+sudo apt install git p7zip-full python3-pip python3-wxgtk4.0
+sudo pip3 install WoeUSB-ng
+
+10. Install LINE using wine:
+wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
+
+https://askubuntu.com/questions/517932/how-to-install-line-messaging-app-on-ubuntu#:~:text=after%20some%20research%2C%20here%20is%20a%20tutorial%20about%20how%20to%20install%20line%20on%20ubuntu%2012.04
+
+11. Install discord
+sudo snap install discord
+
+12. Set ctrl+backspace to delete previous word in terminal
+ - sudo nano ~/.bashrc
+ - append `stty werase \^H` di paleng bawah
+ - save -> `source ~/.bashrc` 
+ 
+13. JUST USE MINICONDA FOR PYTHON ENV
+
+14.
+
+

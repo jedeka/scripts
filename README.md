@@ -1,2 +1,2 @@
 # scripts
-My self-defined scripts that are used in many cases 
+Several self-defined scripts used
