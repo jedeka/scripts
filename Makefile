@@ -3,10 +3,9 @@ all:
 	@echo "command copied, paste to continue"
 	
 req:
-	pip install -re requirements.txt
+	pip install -r requirements.txt
 	
 	
-
 # unzip lz4 file
 unlz4:
 	unlz4 .tar.lz4 | tar -xv
