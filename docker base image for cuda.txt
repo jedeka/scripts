@@ -1,0 +1,9 @@
+11.1-cudnn8-devel-ubuntu18.04
+  ^       ^   ^           ^
+  |	  |   |	   |---------> ubuntu version
+  |	  |  development env
+  |	  CuDNN ver
+ CUDA ver.
+ 
+ 
+ CUSTOMIZE as needed
