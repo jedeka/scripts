@@ -1,5 +1,8 @@
 Ubuntu 20.04 Installation Notes
 
+0. Remember to quickly quiet the pcibus nomsi & noaer verbosity. Boot into safe mode to access terminal -> open /etc/default/grub -> add  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=noaer". 
+	Source: https://itsfoss.com/pcie-bus-error-severity-corrected/
+	
 1. sublime text: https://linuxize.com/post/how-to-install-sublime-text-3-on-ubuntu-20-04/
 
 2. python

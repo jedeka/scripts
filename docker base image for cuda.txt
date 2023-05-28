@@ -1,9 +1,9 @@
-11.1-cudnn8-devel-ubuntu18.04
-  ^       ^   ^           ^
-  |	      |   |	          |---------> ubuntu version
-  |	      |  development env
-  |	  CuDNN ver
- CUDA ver.
- 
- 
+example: 11.1-cudnn8-devel-ubuntu18.04
+- 11.1 : CUDA version
+- cudnn8 : CuDNN version 8
+- devel : development env (including compilation, debugging, and all development packages. 
+	Another options: base(bare minimum)/runtime (contains all shared library))
+- ubuntu18.04 : Ubuntu version 18.04
+
+
  CUSTOMIZE as needed
