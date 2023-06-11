@@ -51,6 +51,6 @@ sudo snap install discord
  
 13. JUST USE MINICONDA FOR PYTHON ENV
 
-14.
+14. See disk usage and sort in descending order (remove -r to sort in ascending manner)
 
 
