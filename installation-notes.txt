@@ -3,7 +3,28 @@ Ubuntu 20.04 Installation Notes
 0. Remember to quickly quiet the pcibus nomsi & noaer verbosity. Boot into safe mode to access terminal -> open /etc/default/grub -> add  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=noaer". 
 	Source: https://itsfoss.com/pcie-bus-error-severity-corrected/
 	
-1. sublime text: https://linuxize.com/post/how-to-install-sublime-text-3-on-ubuntu-20-04/
+Efi error and clearance:
+- https://askubuntu.com/questions/217904/unable-to-boot-into-windows-after-installing-ubuntu-how-to-fix/921722#921722
+- https://askubuntu.com/questions/1271907/dualboot-ubuntu-windows-error-file-efi-microsoft-boot-bootmgfw-efi-not-fou
+- https://support.microsoft.com/en-us/windows/create-a-usb-recovery-drive-460091d5-1e8f-cb33-2d17-8fdef77412d5
+- https://www.youtube.com/watch?v=rJQk9KVekF
+- https://itsfoss.com/bootable-windows-usb-linux
+
+Repair Windows unbootable on dual boot:
+- https://www.youtube.com/watch?v=BFAyG57WQX8
+- https://www.youtube.com/watch?v=rJQk9KVekFI
+
+	
+1. Install flameshot (useful opensource screenshot app)
+	- sudo apt install flameshot
+	- search keyboard shortcuts at settings, create new custom shortcut 
+	- optional: 
+		- for simplicity, just use below setting: 
+			name: flameshot
+			command: flameshot gui 
+			keyboard shortcut: F1, since F1 is rarely used for anything. 
+		- import previously exported personal config by entering `flameshot config` at terminal -> general -> Import -> choose your flameshot.conf file
+	For more info, in-app shortcuts, learn it here https://github.com/flameshot-org/flameshot
 
 2. python
 install: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
@@ -36,7 +57,7 @@ command terakhir: python3 -m pip install tensorflow==2.2.0
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0
 sudo pip3 install WoeUSB-ng
 
-10. Install LINE using wine:
+10. [not recommended, just use chrome web store] Install LINE using wine:
 wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
 
 https://askubuntu.com/questions/517932/how-to-install-line-messaging-app-on-ubuntu#:~:text=after%20some%20research%2C%20here%20is%20a%20tutorial%20about%20how%20to%20install%20line%20on%20ubuntu%2012.04
@@ -51,6 +72,16 @@ sudo snap install discord
  
 13. JUST USE MINICONDA FOR PYTHON ENV
 
-14. See disk usage and sort in descending order (remove -r to sort in ascending manner)
+14. See disk usage and sort in descending order (remove -r to sort in ascending manner): 
+	- du -h | tac 
+	
+15. lz4 compression for a good, fast compression (read docs or read https://manpages.debian.org/testing/lz4/unlz4.1.en.html)
+	- compress folders: `tar cvf - "[FOLDER DIRECTORY]" | lz4 - [OUTPUT FILENAME].tar.lz4`
+	- decompress folders: `unlz4 -c < [LZ4 FILENAME].tar.lz4 | tar xvf -`
+
+
+
+	
+	
 
 
